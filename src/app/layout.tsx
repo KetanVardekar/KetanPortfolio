@@ -239,7 +239,7 @@ export default function RootLayout({
         <title>Ketan Vardekar – Full Stack Developer</title>
         <meta
           name="description"
-          content="Full Stack Developer with 3+ years of experience in Angular, React, Next.js 15, Node.js, and SQL."
+          content="Full Stack Developer with 4 years of experience in Angular, React, Next.js 15, Node.js, and SQL."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

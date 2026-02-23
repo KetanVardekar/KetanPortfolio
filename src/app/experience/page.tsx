@@ -19,7 +19,7 @@ export default function ExperiencePage() {
             My <span className="gradient-text">Journey</span>
           </h1>
           <p className="max-w-xl" style={{ color: "var(--text-secondary)" }}>
-            3+ years of building scalable web applications across diverse industries and
+            4 years of building scalable web applications across diverse industries and
             tech stacks.
           </p>
         </div>
@@ -136,7 +136,7 @@ export default function ExperiencePage() {
             className="text-4xl font-bold mb-2"
             style={{ fontFamily: "var(--font-display)", color: "var(--accent)" }}
           >
-            3+ Years
+            4 Years
           </p>
           <p style={{ color: "var(--text-secondary)" }}>
             of professional full stack development experience across 3 companies

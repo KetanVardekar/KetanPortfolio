@@ -100,7 +100,7 @@ export default function SkillsPage() {
             My <span className="gradient-text">Tech Stack</span>
           </h1>
           <p className="max-w-xl" style={{ color: "var(--text-secondary)" }}>
-            A curated toolkit built over 3+ years of hands-on development across
+            A curated toolkit built over 4 years of hands-on development across
             frontend, backend, databases, and cloud.
           </p>
         </div>

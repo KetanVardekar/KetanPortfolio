@@ -23,7 +23,7 @@ const floatingTags = [
 ];
 
 const stats = [
-  { label: "Years Experience", value: "3+" },
+  { label: "Years Experience", value: "4" },
   { label: "Projects Delivered", value: "10+" },
   { label: "Technologies", value: "15+" },
   { label: "Happy Clients", value: "5+" },

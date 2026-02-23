@@ -9,7 +9,7 @@ export const portfolioData = {
     linkedin: "https://linkedin.com",
     github: "https://github.com",
     summary:
-      "Full Stack Developer with 3+ years of experience in Angular, React, Next.js 15, Node.js, and SQL. Skilled in building scalable web applications, optimizing performance, and delivering seamless user experiences. Passionate about clean code, best practices, and continuous learning. Experienced in mentoring and training employees in Angular.",
+      "Full Stack Developer with 4 years of experience in Angular, React, Next.js 15, Node.js, and SQL. Skilled in building scalable web applications, optimizing performance, and delivering seamless user experiences. Passionate about clean code, best practices, and continuous learning. Experienced in mentoring and training employees in Angular.",
   },
 
   experience: [
