@@ -6,8 +6,8 @@ export const portfolioData = {
     location: "Surat, Gujarat",
     phone: "+91-7977120757",
     email: "vketan2188@gmail.com",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com",
+    linkedin: "https://www.linkedin.com/in/ketan-vardekar",
+    github: "https://github.com/KetanVardekar",
     summary:
       "Full Stack Developer with 4 years of experience in Angular, React, Next.js 15, Node.js, and SQL. Skilled in building scalable web applications, optimizing performance, and delivering seamless user experiences. Passionate about clean code, best practices, and continuous learning. Experienced in mentoring and training employees in Angular.",
   },
