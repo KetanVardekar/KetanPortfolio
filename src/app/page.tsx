@@ -168,8 +168,8 @@ export default function HomePage() {
                   <Mail size={15} />
                 </Link>
                 <a
-                  href="/resume.pdf"
-                  download
+                  href="/VardekarKetan_FullStackEngineer.pdf"
+                  download="VardekarKetan_FullStackEngineer.pdf"
                   className="btn-outline"
                   title="Download Resume"
                 >
