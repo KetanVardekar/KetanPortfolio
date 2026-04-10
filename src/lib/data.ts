@@ -8,6 +8,7 @@ export const portfolioData = {
     email: "vketan2188@gmail.com",
     linkedin: "https://www.linkedin.com/in/ketan-vardekar",
     github: "https://github.com/KetanVardekar",
+    leetcode: "https://leetcode.com/u/ketan_vardekar/",
     summary:
       "Full Stack Developer with 4 years of experience in Angular, React, Next.js 15, Node.js, and SQL. Skilled in building scalable web applications, optimizing performance, and delivering seamless user experiences. Passionate about clean code, best practices, and continuous learning. Experienced in mentoring and training employees in Angular.",
   },
@@ -69,6 +70,57 @@ export const portfolioData = {
     },
   ],
 
+  personalProjects: [
+    {
+      name: "Fire Solution",
+      description:
+        "Corporate website for Super India Buildpro Private Limited — a fire safety company. Showcases their firefighting solutions, services, and commitment to safeguarding lives and properties through state-of-the-art fire prevention and response.",
+      tools: ["Next.js", "Tailwind CSS"],
+      link: "https://fire-solution-jlty.vercel.app/",
+      status: "live",
+    },
+    {
+      name: "QR Menu — Restaurant",
+      description:
+        "QR-code-based digital menu website for a Germany-based South Indian restaurant. Customers scan a QR code to browse the menu. Features i18n (internationalization) support for multilingual menus.",
+      tools: ["React", "i18n", "Tailwind CSS"],
+      link: "https://food-menu-website-ten.vercel.app/",
+      status: "live",
+    },
+    {
+      name: "Expando — AI Prompt Expander",
+      description:
+        "An AI-powered tool where users type a rough prompt and the site automatically expands and refines it into a detailed, well-structured prompt. Useful for getting better results from AI tools.",
+      tools: ["Next.js", "AI API", "Tailwind CSS"],
+      link: "https://expando.vercel.app/",
+      status: "live",
+    },
+    {
+      name: "Jyoti Khaman House",
+      description:
+        "Website for a local snack shop. Displays the shop's menu, story, and contact details. Currently in progress with more features being added.",
+      tools: ["Next.js", "Tailwind CSS"],
+      link: "https://jyoti-khaman-house.vercel.app/",
+      status: "in-progress",
+    },
+    {
+      name: "Tatkal Assistant",
+      description:
+        "A ticket booking assistant for my side business. Users submit their Tatkal train ticket booking details through the site, and the details are sent directly to WhatsApp for processing and confirmation.",
+      tools: ["Next.js", "WhatsApp API", "Tailwind CSS"],
+      link: "https://tatkal-assistant-booking.vercel.app/",
+      status: "live",
+    },
+    {
+      name: "Krup Yoga",
+      description:
+        "A yoga session website built for a friend who offers online yoga classes. Displays available sessions, pricing plans, and helps users sign up — making it easy to showcase and sell online yoga sessions.",
+      tools: ["Next.js", "Tailwind CSS"],
+      link: "https://krup-yoga.vercel.app/",
+      status: "live",
+    },
+  ],
+
   skills: {
     "Web & Frontend": ["React", "Next.js (v15)", "Angular", "HTML/CSS"],
     "Backend & APIs": ["Node.js", "NestJS", "Laravel", "Swagger"],
@@ -89,8 +141,8 @@ export const portfolioData = {
   ],
 
   certifications: [
-    { name: "Angular (Intermediate)", issuer: "HackerRank" },
-    { name: "Node.js (Basic)", issuer: "HackerRank" },
-    { name: "SQL (Basic)", issuer: "HackerRank" },
+    { name: "Angular (Intermediate)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/7fd435179951" },
+    { name: "Node.js (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/e939cecd6d70" },
+    { name: "SQL (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/9dd5093a76f8" },
   ],
 };
