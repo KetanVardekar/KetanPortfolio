@@ -11,7 +11,9 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+    const text = `Hi Ketan! 👋\n\nName: ${form.name}\nEmail: ${form.email}\nSubject: ${form.subject}\n\nMessage:\n${form.message}`;
+    const whatsappUrl = `https://wa.me/917977120757?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
     setSubmitted(true);
   };
 
@@ -209,7 +211,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
-                        placeholder="John Doe"
+                        placeholder="Alex Rivera"
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         style={inputStyles}
@@ -227,7 +229,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         required
-                        placeholder="john@example.com"
+                        placeholder="alex@gmail.com"
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                         style={inputStyles}
