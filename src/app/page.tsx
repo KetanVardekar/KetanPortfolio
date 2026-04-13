@@ -27,7 +27,7 @@ import { portfolioData } from "@/lib/data";
 const floatingTags = [
   "React", "Next.js", "Angular", "Node.js",
   "TypeScript", "PostgreSQL", "NestJS", "AWS",
-  "MongoDB", "Tailwind", "Prisma", "SQL",
+  "MongoDB", "Tailwind", "Prisma", "SQL", "Python",
 ];
 
 const stats = [
@@ -59,7 +59,6 @@ export default function HomePage() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     setVisible(true);
     const handler = (e: MouseEvent) => {
@@ -218,9 +217,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right – floating tags sphere */}
+            {/* Right – floating tags sphere (desktop only) */}
             <div
-              className={`relative flex items-center justify-center transition-all duration-1000 delay-300 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
+              className={`relative hidden lg:flex items-center justify-center transition-all duration-1000 delay-300 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
             >
               {/* Central orb */}
               <div className="relative w-64 h-64 flex items-center justify-center">
@@ -282,6 +281,17 @@ export default function HomePage() {
                   </span>
                 ))}
               </div>
+            </div>
+
+            {/* Mobile tag cloud */}
+            <div
+              className={`lg:hidden flex flex-wrap gap-2 justify-center transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+            >
+              {floatingTags.map((tag) => (
+                <span key={tag} className="badge" style={{ fontSize: "0.75rem", padding: "5px 12px" }}>
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
         </div>

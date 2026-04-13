@@ -30,6 +30,7 @@ const proficiency: Record<string, number> = {
   "Jest": 72,
   "Karma": 70,
   "Jasmine": 70,
+  "Cypress": 68,
   "Laravel": 60,
   "HTML/CSS": 88,
   "Tailwind": 80,
@@ -38,6 +39,7 @@ const proficiency: Record<string, number> = {
   "JIRA": 80,
   "Trello": 80,
   "Swagger": 75,
+  "Python": 55,
 };
 
 function SkillBar({ name, value }: { name: string; value: number }) {
@@ -176,7 +178,7 @@ export default function SkillsPage() {
               { label: "REST APIs", detail: "Node.js & NestJS" },
               { label: "Type Safety", detail: "TypeScript & Prisma" },
               { label: "Payment Integration", detail: "Razorpay & Open Money" },
-              { label: "Unit Testing", detail: "Jest, Karma & Jasmine" },
+              { label: "Unit & E2E Testing", detail: "Jest, Karma, Jasmine & Cypress" },
             ].map(({ label, detail }) => (
               <div
                 key={label}

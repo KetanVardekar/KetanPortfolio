@@ -123,10 +123,10 @@ export const portfolioData = {
 
   skills: {
     "Web & Frontend": ["React", "Next.js (v15)", "Angular", "HTML/CSS"],
-    "Backend & APIs": ["Node.js", "NestJS", "Laravel", "Swagger"],
+    "Backend & APIs": ["Node.js", "Swagger"],
     "Databases & ORM": ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"],
-    "Languages": ["JavaScript", "TypeScript", "SQL"],
-    "Testing": ["Jest", "Karma", "Jasmine"],
+    "Languages": ["JavaScript", "TypeScript", "SQL", "Python"],
+    "Testing": ["Jest", "Karma", "Jasmine", "Cypress"],
     "Cloud & DevOps": ["AWS S3", "AWS SES"],
     "Project Management": ["JIRA", "Trello"],
   },
