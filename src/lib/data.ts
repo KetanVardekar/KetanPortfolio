@@ -119,6 +119,14 @@ export const portfolioData = {
       link: "https://krup-yoga.vercel.app/",
       status: "live",
     },
+    {
+      name: "FitBowl",
+      description:
+        "A calorie and protein calculator built for my side business. Users can add ingredients to a bowl and instantly see the total calorie and protein count — helping customers make informed, healthy food choices.",
+      tools: ["Next.js", "Tailwind CSS"],
+      link: "https://fit-bowl.vercel.app/",
+      status: "live",
+    },
   ],
 
   skills: {
