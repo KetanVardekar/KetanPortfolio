@@ -127,6 +127,15 @@ export const portfolioData = {
       link: "https://fit-bowl.vercel.app/",
       status: "live",
     },
+    {
+      name: "CollabCode",
+      description:
+        "A real-time collaborative code editor where multiple users can write and edit code simultaneously in the browser. Built with Socket.IO for live WebSocket communication and Yjs CRDTs for conflict-free sync — features live presence awareness and color-coded user avatars. Containerized with Docker and deployed on AWS.",
+      tools: ["React", "Monaco Editor", "Yjs", "Socket.IO", "Node.js", "Docker", "AWS"],
+      link: "http://docker-aws-alb-570729192.ap-south-1.elb.amazonaws.com/",
+      status: "live",
+    },
+
   ],
 
   skills: {
