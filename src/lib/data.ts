@@ -161,5 +161,10 @@ export const portfolioData = {
     { name: "Angular (Intermediate)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/7fd435179951" },
     { name: "Node.js (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/e939cecd6d70" },
     { name: "SQL (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/9dd5093a76f8" },
+    {
+      name: "Docker Foundations Professional Certificate",
+      issuer: "LinkedIn Learning",
+      link: "https://www.linkedin.com/learning/certificates/0b5f761b2eda06742d12e6f1fdb9f6969d591c6b203bfc189faf1506d45dd44c?trk=share_certificate",
+    },
   ],
 };
