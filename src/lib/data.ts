@@ -72,6 +72,14 @@ export const portfolioData = {
 
   personalProjects: [
     {
+      name: "Hisab Connect",
+      description:
+        "My own SaaS platform for workforce management — automates attendance tracking, salary calculation, and advance management for Indian businesses including factories, workshops, and construction sites.",
+      tools: ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS","Supabase"],
+      link: "https://www.hisabconnect.com/",
+      status: "live",
+    },
+    {
       name: "Fire Solution",
       description:
         "Corporate website for Super India Buildpro Private Limited — a fire safety company. Showcases their firefighting solutions, services, and commitment to safeguarding lives and properties through state-of-the-art fire prevention and response.",
@@ -96,14 +104,6 @@ export const portfolioData = {
       status: "live",
     },
     {
-      name: "Jyoti Khaman House",
-      description:
-        "Website for a local snack shop. Displays the shop's menu, story, and contact details. Currently in progress with more features being added.",
-      tools: ["Next.js", "Tailwind CSS"],
-      link: "https://jyoti-khaman-house.vercel.app/",
-      status: "in-progress",
-    },
-    {
       name: "Tatkal Assistant",
       description:
         "A ticket booking assistant for my side business. Users submit their Tatkal train ticket booking details through the site, and the details are sent directly to WhatsApp for processing and confirmation.",
@@ -126,15 +126,15 @@ export const portfolioData = {
       tools: ["Next.js", "Tailwind CSS"],
       link: "https://fit-bowl.vercel.app/",
       status: "live",
-    },
-    {
-      name: "CollabCode",
-      description:
-        "A real-time collaborative code editor where multiple users can write and edit code simultaneously in the browser. Built with Socket.IO for live WebSocket communication and Yjs CRDTs for conflict-free sync — features live presence awareness and color-coded user avatars. Containerized with Docker and deployed on AWS.",
-      tools: ["React", "Monaco Editor", "Yjs", "Socket.IO", "Node.js", "Docker", "AWS"],
-      link: "http://docker-aws-alb-570729192.ap-south-1.elb.amazonaws.com/",
-      status: "live",
-    },
+    }
+    // {
+    //   name: "CollabCode",
+    //   description:
+    //     "A real-time collaborative code editor where multiple users can write and edit code simultaneously in the browser. Built with Socket.IO for live WebSocket communication and Yjs CRDTs for conflict-free sync — features live presence awareness and color-coded user avatars. Containerized with Docker and deployed on AWS.",
+    //   tools: ["React", "Monaco Editor", "Yjs", "Socket.IO", "Node.js", "Docker", "AWS"],
+    //   link: "http://docker-aws-alb-570729192.ap-south-1.elb.amazonaws.com/",
+    //   status: "live",
+    // },
 
   ],
 

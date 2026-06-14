@@ -10,8 +10,9 @@ const projectColors = [
   { from: "rgba(34,197,94,0.12)", to: "rgba(0,212,255,0.08)" },
 ];
 
-const personalProjectIcons = [Flame, UtensilsCrossed, Sparkles, Store, Train, Dumbbell];
+const personalProjectIcons = [Users, Flame, UtensilsCrossed, Sparkles, Store, Train, Dumbbell];
 const personalProjectColors = [
+  { from: "rgba(0,212,255,0.12)", to: "rgba(99,102,241,0.08)" },
   { from: "rgba(239,68,68,0.12)", to: "rgba(249,115,22,0.08)" },
   { from: "rgba(34,197,94,0.12)", to: "rgba(16,185,129,0.08)" },
   { from: "rgba(139,92,246,0.12)", to: "rgba(217,70,239,0.08)" },
