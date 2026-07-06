@@ -176,7 +176,7 @@ function Footer() {
           </span>
         </div>
         <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-          © 2025 Ketan Vardekar. All rights reserved.
+          © 2026 Ketan Vardekar. All rights reserved.
         </p>
         <div className="flex items-center gap-3">
           <a
