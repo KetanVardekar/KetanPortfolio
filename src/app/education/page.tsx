@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { portfolioData } from "@/lib/data";
-import { GraduationCap, Award, Star, ExternalLink } from "lucide-react";
+import { GraduationCap, Award, Star, ArrowRight } from "lucide-react";
 
 export default function EducationPage() {
   const { education, certifications } = portfolioData;
@@ -107,61 +108,36 @@ export default function EducationPage() {
           ))}
         </div>
 
-        {/* Certifications */}
-        <div className="mb-10">
-          <h2
-            className="text-2xl font-bold mb-8"
-            style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
-          >
-            Certifications
-          </h2>
-          <div className="grid sm:grid-cols-3 gap-5">
-            {certifications.map((cert) => (
-              <a
-                key={cert.name}
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card p-6 text-center group block"
-                style={{ textDecoration: "none" }}
+        {/* Certifications teaser */}
+        <Link
+          href="/certifications"
+          className="card p-8 flex items-center justify-between group mb-16"
+        >
+          <div className="flex items-center gap-4">
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+              style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+            >
+              <Award size={18} />
+            </div>
+            <div>
+              <h2
+                className="text-lg font-semibold"
+                style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
               >
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all group-hover:scale-110"
-                  style={{
-                    background: "var(--accent-soft)",
-                    color: "var(--accent)",
-                    border: "1px solid rgba(0,212,255,0.15)",
-                  }}
-                >
-                  <Award size={20} />
-                </div>
-                <h3
-                  className="font-semibold text-sm mb-1"
-                  style={{ color: "var(--text-primary)" }}
-                >
-                  {cert.name}
-                </h3>
-                <p
-                  className="text-xs"
-                  style={{ color: "var(--accent)", fontFamily: "var(--font-mono)" }}
-                >
-                  {cert.issuer}
-                </p>
-                <div
-                  className="mt-4 pt-4 text-xs flex items-center justify-center gap-1.5"
-                  style={{
-                    borderTop: "1px solid var(--border)",
-                    color: "var(--text-muted)",
-                    fontFamily: "var(--font-mono)",
-                  }}
-                >
-                  Verified ✓
-                  <ExternalLink size={10} />
-                </div>
-              </a>
-            ))}
+                {certifications.length} Certifications
+              </h2>
+              <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                SQL, Node.js, Angular, Next.js & Docker — all verifiable
+              </p>
+            </div>
           </div>
-        </div>
+          <ArrowRight
+            size={16}
+            className="transition-transform group-hover:translate-x-1 flex-shrink-0"
+            style={{ color: "var(--accent)" }}
+          />
+        </Link>
 
         {/* BTech highlight */}
         <div

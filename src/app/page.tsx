@@ -23,6 +23,7 @@ function LeetCodeIcon({ size = 15 }: { size?: number }) {
   );
 }
 import { portfolioData } from "@/lib/data";
+import FeaturedProject from "@/components/FeaturedProject";
 
 const floatingTags = [
   "React", "Next.js", "Angular", "Node.js",
@@ -34,7 +35,6 @@ const stats = [
   { label: "Years Experience", value: "4" },
   { label: "Projects Delivered", value: "10+" },
   { label: "Technologies", value: "15+" },
-  { label: "Happy Clients", value: "5+" },
 ];
 
 const highlights = [
@@ -300,7 +300,7 @@ export default function HomePage() {
       {/* Stats */}
       <section className="py-16" style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div
@@ -356,6 +356,13 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Featured Project */}
+      <section className="section" style={{ paddingBottom: "40px" }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <FeaturedProject />
         </div>
       </section>
 

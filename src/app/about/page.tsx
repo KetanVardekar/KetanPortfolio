@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { portfolioData } from "@/lib/data";
-import { User, MapPin, Phone, Mail, Github, Linkedin, Award } from "lucide-react";
+import { User, MapPin, Phone, Mail, Github, Linkedin, Award, ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
   const { personal, certifications } = portfolioData;
@@ -154,48 +155,33 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Certifications */}
-            <div className="card p-8">
-              <div className="flex items-center gap-3 mb-5">
+            {/* Certifications teaser */}
+            <Link href="/certifications" className="card p-8 flex items-center justify-between group">
+              <div className="flex items-center gap-4">
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
                 >
                   <Award size={18} />
                 </div>
-                <h2
-                  className="text-xl font-semibold"
-                  style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
-                >
-                  Certifications
-                </h2>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                {certifications.map((cert) => (
-                  <div
-                    key={cert.name}
-                    className="px-4 py-2.5 rounded-xl"
-                    style={{
-                      background: "var(--bg-card-hover)",
-                      border: "1px solid var(--border)",
-                    }}
+                <div>
+                  <h2
+                    className="text-lg font-semibold"
+                    style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
                   >
-                    <p
-                      className="text-sm font-medium"
-                      style={{ color: "var(--text-primary)" }}
-                    >
-                      {cert.name}
-                    </p>
-                    <p
-                      className="text-xs"
-                      style={{ color: "var(--accent)", fontFamily: "var(--font-mono)" }}
-                    >
-                      {cert.issuer}
-                    </p>
-                  </div>
-                ))}
+                    {certifications.length} Certifications
+                  </h2>
+                  <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
+                    SQL, Node.js, Angular, Next.js & Docker — all verifiable
+                  </p>
+                </div>
               </div>
-            </div>
+              <ArrowRight
+                size={16}
+                className="transition-transform group-hover:translate-x-1 flex-shrink-0"
+                style={{ color: "var(--accent)" }}
+              />
+            </Link>
           </div>
         </div>
       </div>

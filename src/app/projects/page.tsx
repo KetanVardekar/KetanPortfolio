@@ -2,6 +2,7 @@
 
 import { portfolioData } from "@/lib/data";
 import { ExternalLink, Code2, Layers, Activity, Users, Flame, UtensilsCrossed, Sparkles, Store, Train, Dumbbell } from "lucide-react";
+import FeaturedProject from "@/components/FeaturedProject";
 
 const projectIcons = [Activity, Layers, Users];
 const projectColors = [
@@ -42,7 +43,20 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {/* Projects Grid */}
+        {/* Flagship Project */}
+        <div className="mb-20">
+          <FeaturedProject />
+        </div>
+
+        {/* Client Projects Grid */}
+        <div className="mb-8">
+          <h2
+            className="text-sm font-semibold tracking-wide"
+            style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
+          >
+            CLIENT & TEAM PROJECTS
+          </h2>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, idx) => {
             const Icon = projectIcons[idx % projectIcons.length];

@@ -211,7 +211,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
-                        placeholder="Alex Rivera"
+                        placeholder="Enter your name..."
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         style={inputStyles}
@@ -229,7 +229,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         required
-                        placeholder="alex@gmail.com"
+                        placeholder="Enter your email..."
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                         style={inputStyles}
@@ -249,7 +249,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
-                      placeholder="Project Collaboration"
+                      placeholder="Enter subject..."
                       value={form.subject}
                       onChange={(e) => setForm({ ...form, subject: e.target.value })}
                       style={inputStyles}
@@ -268,7 +268,7 @@ export default function ContactPage() {
                     <textarea
                       required
                       rows={6}
-                      placeholder="Tell me about your project or idea..."
+                      placeholder="Enter your message..."
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       style={{ ...inputStyles, resize: "vertical" }}

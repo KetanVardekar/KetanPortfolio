@@ -70,15 +70,30 @@ export const portfolioData = {
     },
   ],
 
+  flagshipProject: {
+    name: "HisabConnect",
+    tagline: "A full-stack payroll SaaS, architected and built solo — not a CRUD demo",
+    description:
+      "A multi-tenant workforce attendance and payroll platform for Indian SMEs — factories, workshops, and construction contractors — that replaces paper registers and error-prone spreadsheets with a real payroll calculation engine, granular role-based access, and a dedicated employee self-service portal.",
+    link: "https://www.hisabconnect.com/",
+    caseStudyHref: "/projects/hisabconnect",
+    status: "live",
+    stats: [
+      { label: "Roles × Permissions", value: "4×12" },
+      { label: "Data Models", value: "12" },
+      { label: "Audit Event Types", value: "20+" },
+      { label: "Built By", value: "Solo" },
+    ],
+    highlights: [
+      "Real payroll engine — daily & monthly wage types, overtime, half-day proration, holiday-aware working days, month lock/unlock with cascading ledger recalculation",
+      "Multi-tenant RBAC enforced server-side on every request — 4 roles × 12 granular permissions, never just hidden in the UI",
+      "Separate super-admin console for cross-tenant business management, subscriptions, and live platform health monitoring",
+      "Installable PWA with offline asset caching, passwordless phone+OTP auth, and real SMS/email/bot-protection integrations",
+    ],
+    tools: ["Next.js 15", "React 19", "Express", "PostgreSQL", "Prisma", "Tailwind CSS", "Supabase"],
+  },
+
   personalProjects: [
-    {
-      name: "Hisab Connect",
-      description:
-        "My own SaaS platform for workforce management — automates attendance tracking, salary calculation, and advance management for Indian businesses including factories, workshops, and construction sites.",
-      tools: ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS","Supabase"],
-      link: "https://www.hisabconnect.com/",
-      status: "live",
-    },
     {
       name: "Fire Solution",
       description:
@@ -109,14 +124,6 @@ export const portfolioData = {
         "A ticket booking assistant for my side business. Users submit their Tatkal train ticket booking details through the site, and the details are sent directly to WhatsApp for processing and confirmation.",
       tools: ["Next.js", "WhatsApp API", "Tailwind CSS"],
       link: "https://tatkal-assistant-booking.vercel.app/",
-      status: "live",
-    },
-    {
-      name: "Krup Yoga",
-      description:
-        "A yoga session website built for a friend who offers online yoga classes. Displays available sessions, pricing plans, and helps users sign up — making it easy to showcase and sell online yoga sessions.",
-      tools: ["Next.js", "Tailwind CSS"],
-      link: "https://krup-yoga.vercel.app/",
       status: "live",
     },
     {
@@ -160,7 +167,15 @@ export const portfolioData = {
   certifications: [
     { name: "Angular (Intermediate)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/7fd435179951" },
     { name: "Node.js (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/e939cecd6d70" },
+    { name: "Node.js (Intermediate)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/b2712b683763" },
     { name: "SQL (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/9dd5093a76f8" },
+    { name: "SQL (Intermediate)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/b58dfbe79d86" },
+    { name: "SQL (Advanced)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/ac92358336ae" },
+    {
+      name: "Next.js",
+      issuer: "Udemy",
+      link: "https://drive.google.com/file/d/1L86nSrUeGJ-0MZywXjA0zv0GvOqzsyWm/view",
+    },
     {
       name: "Docker Foundations Professional Certificate",
       issuer: "LinkedIn Learning",
